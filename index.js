@@ -52,4 +52,22 @@
     //🎀 function calling //🎀
     const ourPicnicBudget = picnicBudget(1+9+90+1+99+1+1+48);
     console.log(ourPicnicBudget);
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /* Assignment problem- 4 */
+    friends = ['Rahim Kha', 'Abul Ali', 'Jomila Begum', 'Rami Malek', 'Upol Shah', 'Qurban Pathan']
+    console.log(typeof friends);
+    console.log(friends.length);
+    function oddFriend(array) {
+        let oddNames = [];
+        for(let i=0; i<friends.length; i++) {
+            let element = array[i];
+            if((friends.indexOf(element))%2==1) {
+                oddNames.push(element);
+            }
+            
+        }
+        return oddNames;   
+    }
+    //🎀 function calling //🎀   
+    const firstOddName = oddFriend(friends);
+    console.log(firstOddName); 
