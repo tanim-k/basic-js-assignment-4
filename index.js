@@ -6,7 +6,7 @@
     //🎀 function calling //🎀
     const herAna = anaToVori(16*2*3);
     console.log(herAna);
-// -------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /* Assignment problem- 2 */
     function pandaCost(singaraQuantity, samusaQuantity, jalebiQuantity) {
         const perSingaraCost = 7;
@@ -22,8 +22,34 @@
     //🎀 function calling //🎀
     let babasTotalCost = pandaCost(7, 10, 15);
     console.log(babasTotalCost);
-// -------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /* Assignment problem- 3 */
-    function picnicBudget()
+    function picnicBudget(people) {
+        costPerPeopleWhile100 = 5000;
+        costperpeoplewhile101To200 = 4000;
+        costperpeoplewhile201Torest = 3000;
+        if(people <= 100) {
+            const cost = people * costPerPeopleWhile100;
+            return cost;
+        }
+        else if(people <= 200) {
+            const first100PeopleCost = 100 * costPerPeopleWhile100;
+            const secondRangePeople = people - 100;
+            const second100PeopleCost = secondRangePeople * costperpeoplewhile101To200;
+            totalCost = first100PeopleCost + second100PeopleCost;
+            return totalCost
+        }
+        else {
+            const first100PeopleCost = 100 * costPerPeopleWhile100;
+            const secondRangePeople = people - 100;
+            const second100PeopleCost = secondRangePeople * costperpeoplewhile101To200;
+            const restPeople = people - 200;
+            const restPeopleCost = restPeople * costperpeoplewhile201Torest;
+            const totalCost = first100PeopleCost + second100PeopleCost + restPeopleCost;
+            return totalCost;
+        }
+    }
+    //🎀 function calling //🎀
+    const ourPicnicBudget = picnicBudget(1+9+90+1+99+1+1+48);
+    console.log(ourPicnicBudget);
 /* Assignment problem- 4 */
-/* Assignment problem- 5 */
