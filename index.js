@@ -64,8 +64,8 @@
         }
         else {
             const first100PeopleCost = 100 * costPerPeopleWhile100;
-            const secondRangePeople = people - 100;
-            const second100PeopleCost = secondRangePeople * costperpeoplewhile101To200;
+            // ei line ta hobe na: const secondRangePeople = people - 100;
+            const second100PeopleCost = 100 * costperpeoplewhile101To200;
             const restPeople = people - 200;
             const restPeopleCost = restPeople * costperpeoplewhile201ToRest;
             const totalCost = first100PeopleCost + second100PeopleCost + restPeopleCost;
@@ -73,7 +73,7 @@
         }
     }
         //🎀 function calling //🎀
-        const ourPicnicBudget = picnicBudget(1+9+90+1+99+1+1+48);
+        const ourPicnicBudget = picnicBudget(201);
         console.log(ourPicnicBudget);
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*🎀🎀🎀 Assignment problem- 4 🎀🎀🎀*/
